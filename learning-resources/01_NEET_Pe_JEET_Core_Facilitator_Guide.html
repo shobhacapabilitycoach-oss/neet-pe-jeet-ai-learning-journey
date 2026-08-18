@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NEET Pe JEET | Core Facilitator Guide</title>
+  <style>
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+background-color: #1a1a1a;
+border: none;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+<style>
+:root{--navy:#08213f;--navy2:#12365c;--teal:#159b98;--gold:#d8ab36;--ink:#1b2738;--muted:#5d6879;--bg:#f5f7fa;--line:#dfe5ec}
+*{box-sizing:border-box}html,body{width:100%;max-width:none;margin:0;padding:0}
+body{background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.58}
+.topbar{width:100%;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:24px}
+.topbar .wrap{max-width:1120px;margin:auto}.topbar h1{color:#fff;margin:0;font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15}
+.topbar p{margin:.25rem 0 0;color:#d7e4ef}.nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.nav a{color:#fff;text-decoration:none;border:1px solid #7f97ad;border-radius:8px;padding:8px 11px;font-size:.9rem}
+.page{width:calc(100% - 48px);max-width:1120px;margin:18px auto 34px;background:#fff;padding:30px 40px;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 28px rgba(14,35,61,.06)}
+.page>h1:first-child{display:none}h1,h2,h3,h4{color:var(--navy);line-height:1.25}
+h2{margin:1.35rem 0 .7rem;border-bottom:2px solid #e7edf3;padding-bottom:.28rem}h3{margin:1.05rem 0 .45rem}h4{margin:.9rem 0 .35rem}
+p{margin:.45rem 0}ul,ol{margin:.45rem 0 .7rem;padding-left:1.4rem}li{margin:.18rem 0}
+table{border-collapse:collapse;width:100%;margin:.75rem 0 1rem;font-size:.95rem}th{background:var(--navy);color:#fff;text-align:left}
+th,td{border:1px solid #dce3eb;padding:10px;vertical-align:top}tr:nth-child(even) td{background:#f7f9fb}
+blockquote{margin:.75rem 0;padding:14px 18px;border-left:5px solid var(--gold);background:#fff8e7;color:#5b4c24}
+img{max-width:100%;height:auto;border-radius:10px}a{color:#087d79}
+@media(max-width:700px){.topbar{padding:20px 16px}.page{width:calc(100% - 24px);margin:10px auto 24px;padding:22px 20px}table{display:block;overflow-x:auto;font-size:.86rem}}
+</style></head>
+<body><div class="topbar"><div class="wrap"><h1>NEET Pe JEET | Core Facilitator Guide</h1><p>AI-Ready Admission Counselling · Learning Design Resource</p><div class="nav"><a href="../index.html">← Back to Project</a><a href="../microlearning/module-1/" target="_blank">Start Learning Journey</a></div></div></div><main class="page">
+<header id="title-block-header">
+<h1 class="title">NEET Pe JEET | Core Facilitator Guide</h1>
+</header>
+<p><strong>FACILITATOR GUIDE</strong></p>
+<p>NEET Pe JEET | Core Facilitator Guide</p>
+<p><em>A performance-first counselling workshop for learner-centred,
+consultative admission conversations</em></p>
+<p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Audience</strong></th>
+<th>Sales Executives / Counsellors / Business Development
+Executives</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recommended duration</strong></td>
+<td>120 minutes</td>
+</tr>
+<tr class="even">
+<td><strong>Modality</strong></td>
+<td>Virtual instructor-led or classroom</td>
+</tr>
+<tr class="odd">
+<td><strong>Group size</strong></td>
+<td>12–25 learners</td>
+</tr>
+<tr class="even">
+<td><strong>Business objective</strong></td>
+<td>Improve counselling quality and conversion by helping executives
+diagnose learner needs, involve parents effectively and recommend with
+relevance.</td>
+</tr>
+<tr class="odd">
+<td><strong>Learning approach</strong></td>
+<td>Scenario practice, reflection, peer learning, coaching feedback and
+workplace application</td>
+</tr>
+</tbody>
+</table>
+<h1 id="learning-objectives">Learning objectives</h1>
+<ul>
+<li><p>Build trust in the opening moments of a student counselling
+conversation.</p></li>
+<li><p>Use purposeful discovery questions to uncover the learner&#39;s real
+performance need.</p></li>
+<li><p>Handle parent concerns with empathy, clarification and relevant
+evidence.</p></li>
+<li><p>Connect identified needs to accurate solution evidence and
+meaningful learner benefits.</p></li>
+<li><p>Integrate the complete conversation and agree an appropriate next
+step without pressure.</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>DESIGN PRINCIPLE:</strong> Diagnose before recommending. The
+programme shifts the counsellor from feature-led pitching to
+learner-centred decision support.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="recommended-agenda">Recommended agenda</h1>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>#</strong></th>
+<th><strong>Section</strong></th>
+<th><strong>Time</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Opening &amp; business context</td>
+<td>10 min</td>
+<td>Data story + discussion</td>
+<td>Shared performance need</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Build trust</td>
+<td>20 min</td>
+<td>Demo + reflection</td>
+<td>L.E.A.R.N. behaviours</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Discover before recommending</td>
+<td>25 min</td>
+<td>Question practice + scenario</td>
+<td>C.L.U.E. discovery</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Handle parent concerns</td>
+<td>25 min</td>
+<td>H.E.A.R. practice</td>
+<td>Concern diagnosis</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Recommend with relevance</td>
+<td>20 min</td>
+<td>N.E.B. guided build</td>
+<td>Focused recommendation</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Integrated simulation</td>
+<td>15 min</td>
+<td>Role play + feedback</td>
+<td>Observed skill practice</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Commitment &amp; close</td>
+<td>5 min</td>
+<td>Action plan</td>
+<td>48-hour application</td>
+</tr>
+</tbody>
+</table>
+<h1 id="opening-and-business-context">1. Opening and business
+context</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Create curiosity around conversion quality
+without blaming individuals.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow">Facilitator flow</h2>
+<ul>
+<li><p>Share anonymised funnel patterns: enquiries, meaningful
+conversations, follow-ups and conversions.</p></li>
+<li><p>Ask learners where conversations most often lose
+momentum.</p></li>
+<li><p>Frame the workshop around decision quality: understand the
+person, problem and decision-maker before recommending.</p></li>
+</ul>
+<h2 id="suggested-prompts">Suggested prompts</h2>
+<ul>
+<li><p>What makes a counselling conversation feel useful rather than
+sales-led?</p></li>
+<li><p>Where do we tend to start explaining too early?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Use performance data to
+diagnose, not shame. Do not imply training alone causes conversion
+outcomes.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="build-trust-in-the-first-conversation">2. Build trust in the
+first conversation</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Help counsellors create psychological
+safety before advising.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-1">Facilitator flow</h2>
+<ul>
+<li><p>Demonstrate a rushed opening versus a learner-centred
+opening.</p></li>
+<li><p>Introduce L.E.A.R.N.: Listen, Explore, Acknowledge, Respond, Next
+Step.</p></li>
+<li><p>Practise one opening with a hesitant student and one with a
+confident student.</p></li>
+</ul>
+<h2 id="suggested-prompts-1">Suggested prompts</h2>
+<ul>
+<li><p>What did the counsellor do before giving advice?</p></li>
+<li><p>Which phrase created space for the learner to speak?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Trust is not friendliness
+alone; it is evidence that the counsellor is listening before
+solving.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="discover-before-you-recommend">3. Discover before you
+recommend</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Move from surface statements to a specific
+learner need.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-2">Facilitator flow</h2>
+<ul>
+<li><p>Use common statements such as &#39;I need better coaching&#39; or &#39;my
+scores are stuck&#39;.</p></li>
+<li><p>Introduce C.L.U.E.: Clarify, Listen, Uncover, Echo.</p></li>
+<li><p>Practise follow-up questions that arise from the learner&#39;s
+previous answer.</p></li>
+<li><p>Require a confirmation statement before any
+recommendation.</p></li>
+</ul>
+<h2 id="suggested-prompts-2">Suggested prompts</h2>
+<ul>
+<li><p>What clue did the learner just give you?</p></li>
+<li><p>What do you still need to understand?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Avoid turning discovery into
+an interrogation. One relevant follow-up is better than a checklist of
+questions.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="handle-parent-concerns">4. Handle parent concerns</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Treat parent concerns as information to
+understand, not objections to defeat.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-3">Facilitator flow</h2>
+<ul>
+<li><p>Introduce H.E.A.R.: Hear, Explore, Acknowledge, Respond.</p></li>
+<li><p>Practise concerns around investment, workload, online learning,
+evidence and previous disappointing experiences.</p></li>
+<li><p>Ask learners to separate the first statement from the concern
+underneath it.</p></li>
+</ul>
+<h2 id="suggested-prompts-3">Suggested prompts</h2>
+<ul>
+<li><p>What is the parent protecting?</p></li>
+<li><p>What would you need to know before responding?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Acknowledgement is not
+agreement. Avoid defensive claims, competitor criticism and unsupported
+promises.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="recommend-with-relevance">5. Recommend with relevance</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Connect the diagnosed need to the smallest
+set of relevant, supportable solution evidence.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-4">Facilitator flow</h2>
+<ul>
+<li><p>Introduce N.E.B.: Need, Evidence, Benefit.</p></li>
+<li><p>Give learners feature cards and learner-need cards; ask them to
+select only one or two relevant features.</p></li>
+<li><p>Rewrite generic product statements into learner-specific
+recommendations.</p></li>
+</ul>
+<h2 id="suggested-prompts-4">Suggested prompts</h2>
+<ul>
+<li><p>Why does this feature matter to this learner?</p></li>
+<li><p>What can you leave out?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Do not promise score
+improvement or outcomes that cannot be guaranteed.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="integrated-simulation">6. Integrated simulation</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Build fluency across the complete
+student-parent counselling journey.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-5">Facilitator flow</h2>
+<ul>
+<li><p>Run triads: counsellor, student/parent, observer.</p></li>
+<li><p>Use a five-decision scenario from enquiry through discovery,
+parent concern, recommendation and next step.</p></li>
+<li><p>Observer gives one strength, one adjustment and one sentence to
+try.</p></li>
+<li><p>Repeat the difficult section rather than replaying the entire
+conversation.</p></li>
+</ul>
+<h2 id="suggested-prompts-5">Suggested prompts</h2>
+<ul>
+<li><p>Where did the conversation change direction?</p></li>
+<li><p>Which framework helped, and where did listening matter more than
+the framework?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Score observable behaviour,
+not personality or charisma.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="commitment-and-close">7. Commitment and close</h1>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PURPOSE:</strong> Convert practice into a specific workplace
+behaviour.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="facilitator-flow-6">Facilitator flow</h2>
+<ul>
+<li><p>Ask each learner to choose one behaviour to apply within 48
+hours.</p></li>
+<li><p>Use the commitment: &#39;In my next counselling conversation, instead
+of ___, I will ___.&#39;.</p></li>
+<li><p>Explain manager observation, peer practice and micro-nudge
+reinforcement.</p></li>
+</ul>
+<h2 id="suggested-prompts-6">Suggested prompts</h2>
+<ul>
+<li><p>What is the earliest real conversation where you can practise
+this?</p></li>
+<li><p>What evidence will show the behaviour changed?</p></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>FACILITATOR WATCH-OUT:</strong> Avoid vague commitments such
+as &#39;communicate better&#39;. Require one observable behaviour.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</main></body>
+</html>

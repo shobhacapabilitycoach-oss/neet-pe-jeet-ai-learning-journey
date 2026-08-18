@@ -1,0 +1,14 @@
+Copy these files into your existing local GitHub repository.
+
+REPLACE:
+- README.md
+- case-study/AI_Enhanced_NEET_Pe_JEET_Case_Study.pdf
+
+ADD:
+- index.html
+- learning-resources/*.html
+
+COVER:
+- assets/project-cover.png is included for reference. If you already added your preferred cover image, keep yours and ensure its filename is project-cover.png.
+
+DO NOT replace or delete your existing microlearning/module-1 through module-5 folders.
