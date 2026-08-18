@@ -1,49 +1,158 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NEET Pe JEET | AI-Ready Admission Counselling Journey</title>
 <style>
-:root{--navy:#08213f;--navy2:#12365c;--teal:#169c99;--gold:#d8ab36;--bg:#f5f7fa;--ink:#1d2a3b;--muted:#627086;--line:#dfe6ee}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-.wrap{max-width:1160px;margin:auto;padding:0 24px}.hero{background:linear-gradient(135deg,var(--navy),#123a65);color:#fff;padding:54px 0 48px}
-.eyebrow{color:#54d2ca;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.03;margin:.55rem 0 1rem;max-width:900px}
-.hero p{max-width:820px;color:#dce8f2;font-size:1.08rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:11px 15px;border-radius:9px;text-decoration:none;font-weight:700}
-.primary{background:var(--teal);color:#fff}.secondary{border:1px solid #7e98b1;color:#fff}
-.cover{margin:30px auto 0;max-width:1160px;padding:0 24px}.cover img{width:100%;max-height:430px;object-fit:cover;border-radius:18px;box-shadow:0 16px 40px rgba(0,0,0,.14)}
-section{padding:42px 0}h2{color:var(--navy);font-size:2rem;margin:0 0 12px}.lead{color:var(--muted);max-width:850px;margin:0 0 22px}
-.metrics,.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.metric,.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
-.metric strong{display:block;color:var(--navy);font-size:2rem}.metric span{color:var(--muted)}
-.modules{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.module{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;min-height:250px}
-.num{font-size:.78rem;font-weight:800;color:var(--teal);letter-spacing:.08em}.module h3,.card h3{color:var(--navy);margin:.6rem 0}.module p,.card p{color:var(--muted);font-size:.94rem}.module a,.card a{margin-top:auto;color:#087d79;font-weight:800;text-decoration:none}
-.callout{background:var(--navy);color:#fff;border-radius:18px;padding:28px}.callout h2{color:#fff}.callout p{color:#dce8f2}
+:root{--navy:#08213f;--navy2:#12365c;--teal:#169c99;--bg:#f5f7fa;--ink:#1d2a3b;--muted:#627086;--line:#dfe6ee}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.wrap{max-width:1160px;margin:auto;padding:0 24px}
+.hero{background:linear-gradient(135deg,var(--navy),#123a65);color:#fff;padding:54px 0 48px}
+.eyebrow{color:#54d2ca;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.03;margin:.55rem 0 1rem;max-width:900px}
+.hero p{max-width:820px;color:#dce8f2;font-size:1.08rem}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:11px 15px;border-radius:9px;text-decoration:none;font-weight:700}
+.primary{background:var(--teal);color:#fff}
+.secondary{border:1px solid #7e98b1;color:#fff}
+.cover{margin:30px auto 0;max-width:1160px;padding:0 24px}
+.cover img{width:100%;max-height:430px;object-fit:cover;border-radius:18px;box-shadow:0 16px 40px rgba(0,0,0,.14)}
+section{padding:42px 0}
+h2{color:var(--navy);font-size:2rem;margin:0 0 12px}
+.lead{color:var(--muted);max-width:850px;margin:0 0 22px}
+.metrics,.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.metric,.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.metric strong{display:block;color:var(--navy);font-size:2rem}
+.metric span{color:var(--muted)}
+.modules{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.module{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;min-height:250px}
+.num{font-size:.78rem;font-weight:800;color:var(--teal);letter-spacing:.08em}
+.module h3,.card h3{color:var(--navy);margin:.6rem 0}
+.module p,.card p{color:var(--muted);font-size:.94rem}
+.module a,.card a{margin-top:auto;color:#087d79;font-weight:800;text-decoration:none}
+.callout{background:var(--navy);color:#fff;border-radius:18px;padding:28px}
+.callout h2{color:#fff}
+.callout p{color:#dce8f2}
 footer{padding:28px 0 42px;color:var(--muted);text-align:center}
 @media(max-width:950px){.modules{grid-template-columns:repeat(2,1fr)}.metrics,.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.modules,.metrics,.grid{grid-template-columns:1fr}.hero{padding:40px 0}.wrap,.cover{padding-left:16px;padding-right:16px}}
-</style></head><body>
-<header class="hero"><div class="wrap"><div class="eyebrow">Learning & Development Portfolio Case Study</div>
-<h1>NEET Pe JEET</h1><p><strong>AI-ready admission counselling learning journey</strong> designed to strengthen the quality of learner–parent conversations through structured discovery, scenario practice, reflection and workplace application.</p>
-<div class="buttons"><a class="btn primary" href="microlearning/module-1/">Start the Learning Journey →</a><a class="btn secondary" href="case-study/AI_Enhanced_NEET_Pe_JEET_Case_Study.pdf" target="_blank">View Case Study</a></div></div></header>
-<div class="cover"><img src="assets/project-cover.png" alt="NEET Pe JEET project cover"></div>
+</style>
+</head>
+<body>
 
-<section><div class="wrap"><h2>From course content to counselling capability</h2><p class="lead">The project reframes admission counselling as a performance capability: listen before recommending, diagnose the learner's context, handle parent concerns with empathy, connect recommendations to real needs, and practise the complete conversation.</p>
-<div class="metrics"><div class="metric"><strong>5</strong><span>connected microlearning modules</span></div><div class="metric"><strong>30</strong><span>microlearning lessons across the journey</span></div><div class="metric"><strong>4</strong><span>supporting learning-design resources</span></div></div></div></section>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Learning & Development Portfolio Case Study</div>
+    <h1>NEET Pe JEET</h1>
+    <p><strong>AI-ready admission counselling learning journey</strong> designed to strengthen the quality of learner–parent conversations through structured discovery, scenario practice, reflection and workplace application.</p>
+    <div class="buttons">
+      <a class="btn primary" href="module-1.html">Start the Learning Journey →</a>
+      <a class="btn secondary" href="case-study/AI_Enhanced_NEET_Pe_JEET_Case_Study.pdf" target="_blank">View Case Study</a>
+    </div>
+  </div>
+</header>
 
-<section><div class="wrap"><h2>Experience the 5-module journey</h2><p class="lead">Each module can be launched directly in the browser. Together they move from trust-building to a complete counselling conversation.</p>
-<div class="modules">
-<div class="module"><span class="num">MODULE 01</span><h3>Build Trust in the First Conversation</h3><p>Establish credibility and create the conditions for a meaningful counselling conversation.</p><a href="microlearning/module-1/">Launch module →</a></div>
-<div class="module"><span class="num">MODULE 02</span><h3>Discover Before You Recommend</h3><p>Use purposeful questioning and listening to understand the learner before proposing a path.</p><a href="microlearning/module-2/">Launch module →</a></div>
-<div class="module"><span class="num">MODULE 03</span><h3>Handle Parent Concerns</h3><p>Respond to hesitation and concerns with empathy, clarity and sound counselling judgement.</p><a href="microlearning/module-3/">Launch module →</a></div>
-<div class="module"><span class="num">MODULE 04</span><h3>Recommend with Relevance</h3><p>Connect the recommendation to the learner's stated goals, needs and context.</p><a href="microlearning/module-4/">Launch module →</a></div>
-<div class="module"><span class="num">MODULE 05</span><h3>The Complete Counselling Conversation</h3><p>Bring the behaviours together through integrated practice and application.</p><a href="microlearning/module-5/">Launch module →</a></div>
-</div></div></section>
+<div class="cover">
+  <img src="assets/project-cover.png" alt="NEET Pe JEET project cover">
+</div>
 
-<section><div class="wrap"><h2>Learning Design Toolkit</h2><p class="lead">These browser-readable resources show the design behind the learner experience—not only the finished course.</p>
-<div class="grid">
-<div class="card"><h3>Core Facilitator Guide</h3><p>Facilitation architecture, learning flow, prompts and delivery guidance.</p><a href="learning-resources/01_NEET_Pe_JEET_Core_Facilitator_Guide.html">Open guide →</a></div>
-<div class="card"><h3>Role-Play & Activity Guide</h3><p>Practice scenarios, activity design, observation and debrief resources.</p><a href="learning-resources/02_NEET_Pe_JEET_Role_Play_and_Activity_Guide.html">Open guide →</a></div>
-<div class="card"><h3>Evaluation & Reinforcement</h3><p>Measurement, manager observation and post-training reinforcement design.</p><a href="learning-resources/03_NEET_Pe_JEET_Evaluation_and_Reinforcement_Guide.html">Open guide →</a></div>
-<div class="card"><h3>Rise 360 Storyboard & Rationale</h3><p>The instructional architecture, module structure and design rationale behind the digital journey.</p><a href="learning-resources/04_NEET_Pe_JEET_Rise360_Storyboard_and_Design_Rationale.html">Open design rationale →</a></div>
-</div></div></section>
+<section>
+  <div class="wrap">
+    <h2>From course content to counselling capability</h2>
+    <p class="lead">The project reframes admission counselling as a performance capability: listen before recommending, diagnose the learner's context, handle parent concerns with empathy, connect recommendations to real needs, and practise the complete conversation.</p>
+    <div class="metrics">
+      <div class="metric"><strong>5</strong><span>connected microlearning modules</span></div>
+      <div class="metric"><strong>30</strong><span>microlearning lessons across the journey</span></div>
+      <div class="metric"><strong>3</strong><span>browser-readable learning design resources</span></div>
+    </div>
+  </div>
+</section>
 
-<section><div class="wrap"><div class="callout"><h2>Portfolio perspective</h2><p>This case study demonstrates the translation of a business performance need into a structured learning journey, scenario-based practice, facilitator support, reinforcement and measurement. Historical business results should be interpreted as contribution evidence rather than proof that training alone caused the movement.</p></div></div></section>
-<footer><div class="wrap">Shobha Singh · Learning & Development · Capability Building · AI-Enabled Learning</div></footer>
-</body></html>
+<section>
+  <div class="wrap">
+    <h2>Experience the 5-module journey</h2>
+    <p class="lead">Each module opens inside a portfolio wrapper with Previous, Next and Back to Project navigation, so visitors can move through the complete journey without getting stuck inside a module.</p>
+
+    <div class="modules">
+      <div class="module">
+        <span class="num">MODULE 01</span>
+        <h3>Build Trust in the First Conversation</h3>
+        <p>Establish credibility and create the conditions for a meaningful counselling conversation.</p>
+        <a href="module-1.html">Launch module →</a>
+      </div>
+
+      <div class="module">
+        <span class="num">MODULE 02</span>
+        <h3>Discover Before You Recommend</h3>
+        <p>Use purposeful questioning and listening to understand the learner before proposing a path.</p>
+        <a href="module-2.html">Launch module →</a>
+      </div>
+
+      <div class="module">
+        <span class="num">MODULE 03</span>
+        <h3>Handle Parent Concerns</h3>
+        <p>Respond to hesitation and concerns with empathy, clarity and sound counselling judgement.</p>
+        <a href="module-3.html">Launch module →</a>
+      </div>
+
+      <div class="module">
+        <span class="num">MODULE 04</span>
+        <h3>Recommend with Relevance</h3>
+        <p>Connect the recommendation to the learner's stated goals, needs and context.</p>
+        <a href="module-4.html">Launch module →</a>
+      </div>
+
+      <div class="module">
+        <span class="num">MODULE 05</span>
+        <h3>The Complete Counselling Conversation</h3>
+        <p>Bring the behaviours together through integrated practice and application.</p>
+        <a href="module-5.html">Launch module →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Learning Design Toolkit</h2>
+    <p class="lead">These browser-readable resources show the design behind the learner experience—not only the finished course.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Core Facilitator Guide</h3>
+        <p>Facilitation architecture, learning flow, prompts and delivery guidance.</p>
+        <a href="learning-resources/01_NEET_Pe_JEET_Core_Facilitator_Guide.html">Open guide →</a>
+      </div>
+
+      <div class="card">
+        <h3>Role-Play & Activity Guide</h3>
+        <p>Practice scenarios, activity design, observation and debrief resources.</p>
+        <a href="learning-resources/02_NEET_Pe_JEET_Role_Play_and_Activity_Guide.html">Open guide →</a>
+      </div>
+
+      <div class="card">
+        <h3>Evaluation & Reinforcement</h3>
+        <p>Measurement, manager observation and post-training reinforcement design.</p>
+        <a href="learning-resources/03_NEET_Pe_JEET_Evaluation_and_Reinforcement_Guide.html">Open guide →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="callout">
+      <h2>Portfolio perspective</h2>
+      <p>This case study demonstrates the translation of a business performance need into a structured learning journey, scenario-based practice, facilitator support, reinforcement and measurement. Historical business results should be interpreted as contribution evidence rather than proof that training alone caused the movement.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Shobha Singh · Learning & Development · Capability Building · AI-Enabled Learning</div>
+</footer>
+
+</body>
+</html>
